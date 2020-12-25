@@ -2,40 +2,13 @@
 ini_set("display_errors", 1);
 error_reporting(-1);
 
-<?php 
-Class A {
-	public function solve ($a,$b) {
-		if ($a == 0){
-		  return NULL;
-		}
-		return $this->X=-($b/$a);
-	}
-	protected $X;
-}
-Class B extends A {
-    protected function dis($a, $b, $c) {
-		$x = ($b**2)-4*$a*$c;
-		return $x;
-	}
-	public function qu_solve($a, $b, $c){
-		$x = $this->solve($b,$c);
-		if($a == 0){
-			return $this->solve($b,$c);
-		}
-		if ($x > 0) {
-			return $this->X=array (
-				-($b+sqrt($b**2-4*$a*$c)/2*$a),
-				-($b-sqrt($b**2-4*$a*$c)/2*$a)
-			);
-		}
-		
-		if ($x == 0) {
-			return $this->X=array(-($b/(2*$a)));
-		}
-		return $this->X=NULL;
-	}
-}
-	$a = new A();
-	$b = new B();
-	$a->solve(1,2);
-	$b->qu_solve(0,2,1);
+use Bezrukov\Square;
+use Bezrukov\MyLog;
+
+require_once 'Bezrukov/Line.php';
+require_once 'Bezrukov/Square.php';
+require_once 'Bezrukov/MyLog.php';
+require_once 'core/EquationInterface.php';
+require_once 'core/LogAbstract.php';
+require_once 'core/LogInterface.php';
+
