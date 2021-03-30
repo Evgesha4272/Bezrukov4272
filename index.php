@@ -6,15 +6,12 @@ use Bezrukov\BezrukovException;
 use Bezrukov\Square;
 use Bezrukov\MyLog;
 
-require_once 'Bezrukov/Line.php';
-require_once 'Bezrukov/Square.php';
-require_once 'Bezrukov/MyLog.php';
-require_once 'core/LogAbstract.php';
-require_once 'core/LogInterface.php';
-require_once 'core/EquationInterface.php';
-require_once 'Bezrukov/BezrukovException.php';
+require_once __DIR__ . './vendor/autoload.php';
 
 try {
+	if(!is_dir("log")) {
+        mkdir("log", 0700);
+    }
 	
 	MyLog::log("Версия программы : ".trim(file_get_contents('version')));
 	

@@ -1,0 +1,36 @@
+{
+  "name": "evgesha4272/bezrukov4272",
+  "description": "project",
+  "type": "project",
+  "license": "-",
+  "authors": [
+    {
+      "name": "bezrukov evgeniy",
+	  "email": "jackbezrukov@gmail.com"
+    }
+  ],
+
+  "minimum-stability": "dev",
+  
+  "scripts": {
+    "post-install-cmd": [
+        "git symbolic-ref --short -q HEAD>version"
+    ]
+  },
+  
+  "require": {
+    "evgesha4272/bezrukov2": "2.0",
+    "ext-readline": "*"
+  },
+
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/rok9ru/trpo-core"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/Evgesha4272/Bezrukov2.git"
+    }
+  ]
+}
