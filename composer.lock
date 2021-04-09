@@ -4,18 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b6964caecc30e6b66417ca28d0cdb6f",
+    "content-hash": "9b927b999e164f528f2ab0ce0b4ed028",
     "packages": [
         {
             "name": "evgesha4272/bezrukov2",
-            "version": "2.0",
+            "version": "2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Evgesha4272/Bezrukov2.git",
-                "reference": "fb591439e8af955bb017db24c8dd955114b12d48"
+                "reference": "25ce8cba56ff4595c3d833f19ed27b01d927c8f8"
             },
             "require": {
                 "rok9ru/trpo-core": "2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
             },
             "type": "library",
             "autoload": {
@@ -33,7 +36,7 @@
                 }
             ],
             "description": "Evgesha",
-            "time": "2021-03-21T17:51:53+00:00"
+            "time": "2021-04-09T20:41:12+00:00"
         },
         {
             "name": "rok9ru/trpo-core",
