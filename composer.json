@@ -19,7 +19,7 @@
   },
   
   "require": {
-    "evgesha4272/bezrukov2": "2.0",
+    "evgesha4272/bezrukov2": "^2.0",
     "ext-readline": "*"
   },
 
